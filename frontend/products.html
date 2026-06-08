@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse our catalog of professional grade mice, mechanical keyboards, ANC headphones, and other essential workspace items.">
+  <title>Apex Hardware - Browse Products</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- App Header -->
+  <header class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="logo-link">
+        Apex Hardware<span class="logo-dot"></span>
+      </a>
+      
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="products.html" class="nav-link active">Products</a></li>
+          <li><a href="cart.html" class="nav-link">Cart</a></li>
+        </ul>
+      </nav>
+      
+      <div class="nav-actions">
+        <!-- Cart Badge -->
+        <a href="cart.html" class="cart-icon-container" aria-label="View Shopping Cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+          <span class="cart-badge" id="cart-count">0</span>
+        </a>
+
+        <!-- Dynamic User Auth Nav -->
+        <div id="auth-nav-container">
+          <button onclick="location.href='login.html'" class="btn-nav-login">Log In</button>
+          <button onclick="location.href='register.html'" class="btn-nav-register">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    
+    <div class="section-header" style="margin-bottom: 1.5rem;">
+      <div class="section-title-wrapper">
+        <span class="section-subtitle">Gear Catalogue</span>
+        <h1 class="section-title">Explore Tech Workspace Essentials</h1>
+      </div>
+    </div>
+
+    <!-- Catalog Page Layout -->
+    <div class="catalog-layout">
+      
+      <!-- Filters Sidebar -->
+      <aside class="filters-sidebar">
+        <!-- Search -->
+        <div class="filter-group">
+          <h3 class="filter-title">Search</h3>
+          <input type="text" id="search-input" class="search-filter-input" placeholder="Type to search...">
+        </div>
+
+        <!-- Categories -->
+        <div class="filter-group">
+          <h3 class="filter-title">Category</h3>
+          <ul class="category-list" id="category-filter">
+            <li class="category-item active" data-category="all"><button>All Items</button></li>
+            <li class="category-item" data-category="electronics"><button>Electronics</button></li>
+            <li class="category-item" data-category="audio"><button>Audio</button></li>
+            <li class="category-item" data-category="accessories"><button>Accessories</button></li>
+          </ul>
+        </div>
+
+        <!-- Sorting -->
+        <div class="filter-group">
+          <h3 class="filter-title">Sort By</h3>
+          <select id="sort-select" class="sort-select">
+            <option value="default">Featured</option>
+            <option value="price-low-high">Price: Low to High</option>
+            <option value="price-high-low">Price: High to Low</option>
+            <option value="name-asc">Name: A to Z</option>
+          </select>
+        </div>
+      </aside>
+
+      <!-- Products Grid Display -->
+      <section>
+        <div class="products-grid" id="catalog-products-grid">
+          <!-- Populated dynamically -->
+          <p style="grid-column: 1/-1; text-align: center; color: var(--text-muted);">Syncing catalog items...</p>
+        </div>
+      </section>
+
+    </div>
+
+  </main>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">Apex Hardware<span class="logo-dot"></span></div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+      <div style="text-align: right;">
+        <div>&copy; 2026 Apex Hardware Inc. All rights reserved.</div>
+        <div style="margin-top: 0.25rem; font-weight: 600; color: var(--primary);">Designed by BHUKYA KAIRAM</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

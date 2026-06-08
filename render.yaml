@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: simple-ecommerce-store
+    env: node
+    plan: free # MongoDB is hosted externally (e.g. MongoDB Atlas), so we can use the Free tier!
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 5005
+      - key: NODE_ENV
+        value: production
+      - key: JWT_SECRET
+        generateValue: true
+      - key: MONGODB_URI
+        sync: false # Prompts you to input your MongoDB Atlas Connection String on deployment

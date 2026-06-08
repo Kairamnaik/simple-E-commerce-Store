@@ -1,0 +1,10 @@
+node_modules/
+backend/ecommerce.db
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+.DS_Store
+.env
+dist/
+build/
