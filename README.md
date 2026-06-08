@@ -126,3 +126,4 @@ Make sure you have [Node.js](https://nodejs.org/) installed (v16+ recommended).
 
 ## 🛡️ License
 This project is licensed under the **ISC License**.
+# simple-E-commerce-Store
